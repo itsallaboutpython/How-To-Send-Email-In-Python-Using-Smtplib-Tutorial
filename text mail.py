@@ -4,17 +4,12 @@ import getpass
 HOST = "smtp-mail.outlook.com"
 PORT = 587
 
-FROM_EMAIL = "allaboutpythontestacc2@outlook.com"
-TO_EMAIL = "allaboutpythoninfo@gmail.com"
+FROM_EMAIL = "<add from email address here>"
+TO_EMAIL = "<add to email address here>"
 PASSWORD = getpass.getpass("Enter password: ")
 
-MESSAGE = """Subject: Mail sent using python
-Hi allaboutpython, 
-
-This email is sent using a test account.
-
-Thanks,
-Test Account"""
+MESSAGE = """Subject: <add mail subject here>
+<add mail content here>"""
 
 smtp = smtplib.SMTP(HOST, PORT)
 
