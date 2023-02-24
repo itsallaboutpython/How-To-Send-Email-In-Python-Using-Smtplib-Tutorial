@@ -7,12 +7,12 @@ from email.mime.text import MIMEText
 HOST = "smtp-mail.outlook.com"
 PORT = 587
 
-FROM_EMAIL = "allaboutpythontestacc2@outlook.com"
-TO_EMAIL = "allaboutpythoninfo@gmail.com"
+FROM_EMAIL = "<add from email address here>"
+TO_EMAIL = "<add to email address here>"
 PASSWORD = getpass.getpass("Enter password: ")
 
 message = MIMEMultipart("alternative")
-message['Subject'] = "Mail sent using python"
+message['Subject'] = "<add subject here>"
 message['From'] = FROM_EMAIL
 message['To'] = TO_EMAIL
 message['Cc'] = FROM_EMAIL
